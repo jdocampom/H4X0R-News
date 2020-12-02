@@ -8,11 +8,16 @@
 
 import Foundation
 
+// MARK: -  Results
+
 struct Results: Decodable {
     let hits: [Post]
 }
 
+// MARK: -  Post
+
 struct Post: Decodable, Identifiable {
+    /// Tag: Variables
     var id: String {
         return objectID
     }

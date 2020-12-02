@@ -8,10 +8,11 @@
 
 import SwiftUI
 
+// MARK: -  ContentView
+
 struct ContentView: View {
-    
     @ObservedObject var networkManager = NetworkManager()
-    
+    /// Tag: View
     var body: some View {
         NavigationView {
             List(networkManager.posts) { post in
@@ -29,6 +30,8 @@ struct ContentView: View {
         }
     }
 }
+
+// MARK: -  ContentView_Previews
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
